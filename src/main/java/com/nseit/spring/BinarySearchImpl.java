@@ -1,16 +1,16 @@
 package com.nseit.spring;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
 public class BinarySearchImpl {
     @Autowired
+    @Qualifier("quick")
     private SortAlg sortAlg;
 
-    public BinarySearchImpl(SortAlg sortAlg) {
-        this.sortAlg = sortAlg;
-    }
+
 
     public int binarySearch(int[] numbers, int numbersToSearch){
         //BubbleSortAlg bubblesort = new BubbleSortAlg();
