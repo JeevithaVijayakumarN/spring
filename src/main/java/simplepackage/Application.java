@@ -1,4 +1,4 @@
-package com.nseit.spring;
+package simplepackage;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
